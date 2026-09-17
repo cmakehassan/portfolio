@@ -1,15 +1,32 @@
 # Muhammad Hassan Portfolio
 
-Personal portfolio website for Muhammad Hassan, Firmware Engineer and Embedded Systems specialist.
+Personal portfolio website for Muhammad Hassan, Firmware Engineer, Embedded Systems specialist, and DevOps/CI/CD practitioner.
 
 ## Pages
 
 - Home
 - About
 - Skills
+- Projects
 - Contact
 
-The previous project showcase has been removed because those repositories belonged to an inaccessible former GitHub account.
+## Featured Project
+
+### Embedded IoT DevOps Lab
+
+Repository: https://github.com/cmakehassan/embedded-iot-devops-lab
+
+The portfolio currently presents this as Project 01, highlighting multi-stage Azure DevOps YAML pipelines, reusable/parameterized templates, cross-project pipeline reuse, CI/CD automation, and embedded/IoT delivery workflows.
+
+## DevOps Skills Added
+
+- CI/CD pipeline automation
+- Azure DevOps multi-stage YAML pipelines
+- Reusable and parameterized pipeline templates
+- Cross-project / cross-repository workflow organization
+- Build, artifact, and deployment automation
+- AWS-oriented CI/CD workflows and CodePipeline / CodeBuild / CodeDeploy concepts
+- Git, GitHub, PowerShell, Bash/Linux, YAML, CMake, and Make automation
 
 ## GitHub
 

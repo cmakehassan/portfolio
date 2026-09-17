@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="navbar">
             <div class="logo">
@@ -18,490 +17,115 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="projects.html" class="nav-link active">Projects</a></li>
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <button class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; padding: 4rem 2rem; text-align: center;">
         <div class="container">
-            <h1 style="color: white;">My Projects</h1>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem;">Showcasing firmware and embedded systems solutions</p>
+            <h1 style="color: white;">Projects</h1>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem;">Selected engineering work across embedded systems, IoT, DevOps, and automation</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects-section">
+    <section>
         <div class="container">
+            <div class="section-title">
+                <h2>Project Portfolio</h2>
+                <p>Starting with my current public GitHub projects. More projects will be added as they are migrated to my new account.</p>
+            </div>
+
             <div class="projects-list">
-                <!-- Main Project -->
-                <div class="project-detail-card featured-project" id="medical-wristband">
+                <article class="project-detail-card">
                     <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
+                        <div class="project-icon"><i class="fas fa-code-branch"></i></div>
                         <div class="project-title-section">
-                            <span class="main-project-badge">Main Project</span>
-                            <h3>Medical Wristband Firmware</h3>
-                            <p class="project-meta">2026 | Research Prototype | Firmware Project</p>
+                            <h3>Embedded IoT DevOps Lab</h3>
+                            <div class="project-meta">Project 01 · CI/CD Automation · DevOps for Embedded IoT</div>
                         </div>
                     </div>
                     <div class="project-body">
-                        <p><strong>Overview:</strong> Developed complete firmware for an nRF52840-based medical research wristband used for physiological sensing, local storage, BLE telemetry, and offline signal inspection. The firmware coordinates sensors, storage, wireless communication, and on-device processing in a modular embedded architecture.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>nRF52840 BLE SoC</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C, Python, CMake</p>
-                            </div>
-                            <div>
-                                <h5>Firmware Stack</h5>
-                                <p>Zephyr RTOS, BLE GATT</p>
-                            </div>
-                            <div>
-                                <h5>Sensors</h5>
-                                <p>MAX30101, LSM6DSO, ADS1113</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
+                        <p>
+                            A hands-on DevOps engineering lab that applies modern CI/CD practices to embedded and IoT development. The project demonstrates structured pipeline automation using Azure DevOps, reusable YAML components, automated build/deploy stages, and workflows designed to make firmware delivery more repeatable and maintainable.
+                        </p>
+
+                        <h5>Key Engineering Work</h5>
                         <ul>
-                            <li>Real-time PPG acquisition from MAX30101 red and IR channels</li>
-                            <li>Motion-aware signal quality handling using LSM6DSO IMU data</li>
-                            <li>Heart-rate and SpO2 candidate estimation using filtered PPG windows</li>
-                            <li>External W25N01 flash logging for raw and processed records</li>
-                            <li>BLE telemetry service for live data streaming and log transfer</li>
-                            <li>Python-based GUI for realtime signal visualization and offline inspection</li>
+                            <li>Designed multi-stage Azure DevOps YAML pipelines with distinct Build and Deploy stages.</li>
+                            <li>Created parameterized step templates so pipeline logic can be reused across projects and repositories.</li>
+                            <li>Implemented CI/CD workflow organization for embedded/IoT projects, including build validation and artifact-oriented delivery.</li>
+                            <li>Added pipeline diagnostics for agent information, workspace paths, source directories, and job execution troubleshooting.</li>
+                            <li>Practiced repository-driven DevOps workflows using Git, YAML, PowerShell/Linux tooling, and automation-first engineering.</li>
                         </ul>
-                        <h5>Technologies & Tools:</h5>
-                        <p>nRF52840, Zephyr RTOS, BLE GATT, MAX30101, LSM6DSO, W25N01, ADS1113, C, Python, CMake, nRF tools</p>
-                        <h5>Project Note:</h5>
-                        <p>This project is built as a research and prototype firmware system, not as a clinical medical product.</p>
+
+                        <div class="project-details-grid">
+                            <div><h5>Primary Platform</h5><p>Azure DevOps</p></div>
+                            <div><h5>Domain</h5><p>Embedded IoT</p></div>
+                            <div><h5>Pipeline</h5><p>Build + Deploy</p></div>
+                            <div><h5>Configuration</h5><p>YAML Templates</p></div>
+                        </div>
+
+                        <div>
+                            <span class="tech-tag">Azure DevOps</span>
+                            <span class="tech-tag">CI/CD</span>
+                            <span class="tech-tag">YAML</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Embedded IoT</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+
                         <div class="project-links">
-                            <a href="https://github.com/decodethehassan/Medical-Wristband-Firmware" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://github.com/cmakehassan/embedded-iot-devops-lab" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-github"></i> View GitHub Repository</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Featured Project: WiFi CSI Smart Electric Heater -->
-                <div class="project-detail-card featured-project" id="wifi-csi-smart-heater">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-signal"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <span class="main-project-badge">Featured Project</span>
-                            <h3>WiFi CSI Integration with Smart Electric Heater</h3>
-                            <p class="project-meta">2026 | ESP32-C6 | IoT & Firmware Project</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Developed an ESP32-C6 based WiFi CSI integration project for a smart electric heater prototype. The project focuses on embedded sensing, CSI data collection, serial logging, and firmware-level integration for smart heater control and monitoring.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>ESP32-C6</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C, Python, CMake</p>
-                            </div>
-                            <div>
-                                <h5>Framework</h5>
-                                <p>ESP-IDF</p>
-                            </div>
-                            <div>
-                                <h5>Focus Area</h5>
-                                <p>WiFi CSI, IoT Sensing</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>ESP32-C6 firmware structure using ESP-IDF for WiFi CSI based sensing</li>
-                            <li>CSI sender module for collecting wireless channel information</li>
-                            <li>Serial logging workflow for testing, debugging, and dataset collection</li>
-                            <li>Model export support through JSON-based configuration for embedded inference experiments</li>
-                            <li>Smart electric heater integration concept for context-aware monitoring and control</li>
-                            <li>Clean project structure with firmware source, tools, logs, and documentation</li>
-                        </ul>
-                        <h5>Technologies & Tools:</h5>
-                        <p>ESP32-C6, ESP-IDF, WiFi CSI, C, Python, CMake, Serial Logging, Embedded IoT, Smart Heater Integration</p>
-                        <h5>Project Note:</h5>
-                        <p>This project is an embedded IoT research and prototype implementation focused on WiFi CSI integration and smart appliance sensing.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/decodethehassan/WiFi-CSI-Integration-with-smart-electric-heater.git" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Featured Project: Acorai Sensor Emulator -->
-                <div class="project-detail-card featured-project" id="acorai-sensor-emulator">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-wave-square"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <span class="main-project-badge">Featured Project</span>
-                            <h3>Acorai Sensor Emulator on STM32F401</h3>
-                            <p class="project-meta">2026 | STM32F401 | Firmware & Tooling Project</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Developed an STM32F401 based sensor emulator firmware project for generating structured sensor packets and validating communication workflows. The project includes embedded firmware, USB/serial communication support, and Python/WebSocket tooling for logging, inspection, and test workflows.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>STM32F401</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>Embedded C, Python</p>
-                            </div>
-                            <div>
-                                <h5>IDE / Framework</h5>
-                                <p>STM32CubeIDE, STM32 HAL</p>
-                            </div>
-                            <div>
-                                <h5>Focus Area</h5>
-                                <p>Sensor Emulation, Packet Generation</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>STM32F401 firmware structure with Core, Drivers, Middleware, and USB device modules</li>
-                            <li>Emulated sensor data generation for packet-based testing and validation</li>
-                            <li>UART/USB communication workflow for sending generated packets to host tools</li>
-                            <li>Python BLE/serial logging utility for collecting and inspecting emulator output</li>
-                            <li>WebSocket based tooling for GUI-style monitoring and test visualization</li>
-                            <li>Project documentation and STM32CubeMX configuration for reproducible firmware setup</li>
-                        </ul>
-                        <h5>Technologies & Tools:</h5>
-                        <p>STM32F401, STM32CubeIDE, STM32CubeMX, STM32 HAL, USB CDC, UART, Embedded C, Python, WebSocket, Sensor Packet Generation</p>
-                        <h5>Project Note:</h5>
-                        <p>This project is a firmware and testing toolchain for sensor emulation and communication validation.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/decodethehassan/sensor-emulator-acorai.git" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 1 -->
-                <div class="project-detail-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <h3>IoT Smart Home Controller</h3>
-                            <p class="project-meta">2023 | Personal Project</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Developed a comprehensive IoT smart home control system with WiFi connectivity, cloud integration, and mobile app support.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>ESP32-WROOM</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C/C++</p>
-                            </div>
-                            <div>
-                                <h5>OS</h5>
-                                <p>FreeRTOS</p>
-                            </div>
-                            <div>
-                                <h5>Protocols</h5>
-                                <p>WiFi, MQTT, HTTP</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>Real-time sensor monitoring and device control</li>
-                            <li>Cloud synchronization using MQTT protocol</li>
-                            <li>Low-power sleep modes extending battery life</li>
-                            <li>OTA (Over-The-Air) firmware update capability</li>
-                            <li>Secure communication with SSL/TLS encryption</li>
-                            <li>Web dashboard for remote control</li>
-                        </ul>
-                        <h5>Technologies & Tools:</h5>
-                        <p>VS Code, PlatformIO, Arduino IDE, MQTT Broker, AWS IoT Core</p>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="btn btn-small"><i class="fas fa-file"></i> Documentation</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-detail-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-fan"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <h3>BLDC Motor Control System</h3>
-                            <p class="project-meta">2023 | Professional</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Designed and implemented advanced BLDC motor control firmware with field-oriented control (FOC) and real-time feedback.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>STM32F405</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C</p>
-                            </div>
-                            <div>
-                                <h5>OS</h5>
-                                <p>Bare Metal</p>
-                            </div>
-                            <div>
-                                <h5>Interfaces</h5>
-                                <p>CAN, PWM, ADC</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>Field-Oriented Control (FOC) algorithm implementation</li>
-                            <li>Real-time motor speed and torque control</li>
-                            <li>Advanced current sensing and commutation</li>
-                            <li>CAN bus communication for system integration</li>
-                            <li>Thermal protection and fault handling</li>
-                            <li>Efficient PWM generation at 20kHz</li>
-                        </ul>
-                        <h5>Results:</h5>
-                        <p>Achieved 95% motor efficiency with smooth torque delivery and reduced noise. System deployed in 500+ units with zero field failures.</p>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-detail-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-battery-full"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <h3>Battery Management System (BMS)</h3>
-                            <p class="project-meta">2022 | Professional</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Developed intelligent battery management system with cell balancing, thermal monitoring, and safety protection.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>STM32L476</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C</p>
-                            </div>
-                            <div>
-                                <h5>Protocols</h5>
-                                <p>I2C, SPI, CAN</p>
-                            </div>
-                            <div>
-                                <h5>Power</h5>
-                                <p>Ultra-Low Power</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>Multi-cell battery monitoring and balancing</li>
-                            <li>State of Charge (SOC) estimation using advanced algorithms</li>
-                            <li>Thermal management with temperature compensation</li>
-                            <li>Over-current and over-voltage protection</li>
-                            <li>Energy-efficient design with ultra-low sleep current</li>
-                            <li>Predictive fault detection and logging</li>
-                        </ul>
-                        <h5>Performance:</h5>
-                        <p>Achieved 30% improvement in battery lifespan through intelligent charging algorithms. Sleep current reduced to 5µA.</p>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-detail-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-thermometer"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <h3>Multi-Sensor Environmental Monitor</h3>
-                            <p class="project-meta">2022 | Educational</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Created a comprehensive environmental monitoring system with multiple sensors and data logging capabilities.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>Arduino Uno/STM32</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C++</p>
-                            </div>
-                            <div>
-                                <h5>Sensors</h5>
-                                <p>DHT22, BME680, etc.</p>
-                            </div>
-                            <div>
-                                <h5>Storage</h5>
-                                <p>SD Card, EEPROM</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>Temperature, humidity, and pressure monitoring</li>
-                            <li>Air quality and gas detection</li>
-                            <li>Data logging to SD card with timestamps</li>
-                            <li>I2C and SPI bus interface handling</li>
-                            <li>Sensor calibration and error handling</li>
-                            <li>LCD display for real-time data visualization</li>
-                        </ul>
-                        <h5>Tools Used:</h5>
-                        <p>Arduino IDE, STM32CubeIDE, Proteus, Logic Analyzer</p>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" class="btn btn-small"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="btn btn-small"><i class="fas fa-file"></i> Schematics</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-detail-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="project-title-section">
-                            <h3>Custom RTOS Bootloader</h3>
-                            <p class="project-meta">2021 | Professional</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Overview:</strong> Engineered a robust bootloader with firmware update capabilities and system integrity verification.</p>
-                        <div class="project-details-grid">
-                            <div>
-                                <h5>Microcontroller</h5>
-                                <p>ARM Cortex-M4</p>
-                            </div>
-                            <div>
-                                <h5>Language</h5>
-                                <p>C + Assembly</p>
-                            </div>
-                            <div>
-                                <h5>Features</h5>
-                                <p>OTA, Rollback</p>
-                            </div>
-                            <div>
-                                <h5>Security</h5>
-                                <p>CRC, Signature</p>
-                            </div>
-                        </div>
-                        <h5>Key Features:</h5>
-                        <ul>
-                            <li>UART and CAN firmware download protocol</li>
-                            <li>Dual-bank firmware management with rollback</li>
-                            <li>CRC and digital signature verification</li>
-                            <li>Secure firmware encryption support</li>
-                            <li>Hardware watchdog integration</li>
-                            <li>Memory-efficient design (< 32KB)</li>
-                        </ul>
-                        <h5>Impact:</h5>
-                        <p>Enabled seamless OTA updates reducing field maintenance by 60%. Zero failed updates across deployed systems.</p>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Have a firmware project in mind?</h2>
-            <p>I'm available for freelance projects and full-time opportunities</p>
-            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            <h2>Building embedded systems with reliable delivery workflows</h2>
+            <p>Interested in firmware, IoT, CI/CD, Azure DevOps, or cloud automation work?</p>
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer style="background: linear-gradient(135deg, var(--secondary) 0%, #1a1f2e 100%); color: white; padding: 4rem 2rem 2rem; margin-top: 5rem; position: relative;">
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
                 <div>
                     <h4 style="color: white; margin-bottom: 1.5rem; font-size: 1.2rem;">Muhammad Hassan</h4>
-                    <p style="color: #cbd5e1;">Firmware Engineer | Embedded Systems Specialist</p>
-                    <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 1rem;">Passionate about building innovative firmware solutions for embedded devices and IoT applications.</p>
+                    <p style="color: #cbd5e1;">Firmware Engineer | Embedded Systems | DevOps</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 1rem;">Building embedded products and reliable automation workflows for firmware and IoT teams.</p>
                 </div>
                 <div>
                     <h4 style="color: white; margin-bottom: 1.5rem;">Quick Links</h4>
                     <ul style="list-style: none;">
                         <li style="margin-bottom: 0.75rem;"><a href="index.html" style="color: #cbd5e1; transition: all 0.3s ease;">Home</a></li>
                         <li style="margin-bottom: 0.75rem;"><a href="about.html" style="color: #cbd5e1; transition: all 0.3s ease;">About</a></li>
-                        <li style="margin-bottom: 0.75rem;"><a href="projects.html" style="color: #cbd5e1; transition: all 0.3s ease;">Projects</a></li>
                         <li style="margin-bottom: 0.75rem;"><a href="skills.html" style="color: #cbd5e1; transition: all 0.3s ease;">Skills</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="projects.html" style="color: #cbd5e1; transition: all 0.3s ease;">Projects</a></li>
                         <li><a href="contact.html" style="color: #cbd5e1; transition: all 0.3s ease;">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: white; margin-bottom: 1.5rem;">Get In Touch</h4>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 1rem;">
-                            <a href="mailto:mhassankhalid04@gmail.com" style="color: #cbd5e1; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
-                                <i class="fas fa-envelope"></i> mhassankhalid04@gmail.com
-                            </a>
-                        </li>
-                        <li style="margin-bottom: 1rem;">
-                            <a href="tel:+923181759644" style="color: #cbd5e1; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
-                                <i class="fas fa-phone"></i> +92 318 1759644
-                            </a>
-                        </li>
-                        <li>
-                            <p style="color: #cbd5e1; display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-map-marker-alt"></i> Pakistan
-                            </p>
-                        </li>
-                    </ul>
+                    <h4 style="color: white; margin-bottom: 1.5rem;">GitHub</h4>
+                    <p style="color: #cbd5e1; margin-bottom: 1rem;">Explore the source code and DevOps lab directly on GitHub.</p>
+                    <a href="https://github.com/cmakehassan" target="_blank" rel="noopener noreferrer" style="color: #cbd5e1;"><i class="fab fa-github"></i> github.com/cmakehassan</a>
                 </div>
             </div>
-            <div style="padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
-                    <p style="color: #94a3b8;">&copy; 2026 Muhammad Hassan. All rights reserved. | Firmware Engineer</p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="https://github.com/decodethehassan" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/muhammad-hassan-76900b267" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:mhassankhalid04@gmail.com" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
+            <div style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                <p style="color: #94a3b8;">&copy; 2026 Muhammad Hassan. All rights reserved.</p>
+                <a href="https://github.com/cmakehassan" target="_blank" rel="noopener noreferrer" style="color: white;"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </footer>
