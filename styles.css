@@ -2289,3 +2289,15 @@ footer::before {
         transform: none !important;
     }
 }
+
+/* Featured projects on the home page */
+.featured-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.featured-projects-grid .project-card {
+    height: 100%;
+}
